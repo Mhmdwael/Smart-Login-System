@@ -1,0 +1,294 @@
+/* start home Page */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  background-color: #fff;
+  z-index: 99 !important;
+  position: fixed !important;
+  right: 0 !important;
+  left: 0 !important;
+}
+
+.navItem .navbar-brand {
+  background: linear-gradient(
+    180deg,
+    #000000,
+    #1b2e35,
+    #1a2d34,
+    #017eff,
+    #ffffff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.home h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: #1a2d34;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.home h4 {
+  font-size: 20px;
+  font-weight: 200;
+  color: #1a2d34;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.home p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #384b70;
+}
+.btn-form {
+  position: relative;
+  padding: 12px 22px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.btn-form:hover {
+  color: #fff;
+  background-color: #0a5eb0;
+}
+.btn-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  animation: color 1s infinite; /* تطبيق الأنيميشن */
+}
+
+@keyframes color {
+  0% {
+    border-left: 2px solid #0a5eb0;
+  }
+  30% {
+    border-left: 2px solid #0a5db031;
+    border-top: 2px solid #0a5eb0;
+  }
+  50% {
+    border-top: 2px solid #0a5db031;
+    border-right: 2px solid #0a5eb0;
+  }
+  80% {
+    border-right: 2px solid #0a5db031;
+    border-bottom: 2px solid #0a5eb0;
+  }
+  100% {
+    border-bottom: 2px solid #0a5db031;
+    border-left: 2px solid #0a5eb0;
+  }
+}
+
+.home .home-icon {
+  margin-top: 25px;
+}
+.home .home-icon li a {
+  color: #1a2d34;
+  font-size: 20px;
+  text-decoration: none;
+  border: 2px solid #0a5eb0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.home .home-icon li a:hover {
+  background-color: #0a5eb0;
+  color: #fff;
+}
+.home .home-icon ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.home .home-icon ul li {
+  margin-right: 12px;
+}
+/* end home Page */
+/* Start sign Up Page */
+.signPage h1,
+.logPage h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.signPage .signName i,
+.signPage .signUp-form i,
+.signPage .signPassword i,
+.logPage .logName i,
+.logPage .log-form i,
+.logPage .logPassword i {
+  font-size: 18px;
+  color: #017eff;
+}
+.signPage p,
+.logPage p {
+  font-size: 17px;
+}
+.signPage p a,
+.logPage p a {
+  margin-left: 7px;
+  font-size: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #017eff !important;
+}
+
+.signPage .signUp-icon li a,
+.logPage .log-icon li a {
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid #0a5eb0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  margin-right: 15px;
+}
+
+.signPage .signUp-icon a:hover,
+.logPage .log-icon a:hover {
+  background-color: #0a5eb0;
+  border-color: #0a5eb0;
+}
+.logPage .log-icon .i-g:hover,
+.signPage .signUp-icon .i-g:hover {
+  background-color: #db4437;
+  border-color: #db4437;
+}
+.logPage .log-icon .i-x:hover,
+.signPage .signUp-icon .i-x:hover {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+.logPage .log-icon .i-g:hover,
+.home .home-icon .i-g:hover {
+  background-color: #db4437;
+  border-color: #db4437;
+}
+.logPage .log-icon .i-x:hover,
+.home .home-icon .i-x:hover {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+.logPage .log-icon a:hover i,
+.signPage .signUp-icon a:hover i {
+  color: #fff;
+}
+.error,
+.error2,
+.error4,
+.error5,
+.error6,
+.error3 {
+  background-color: red;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 12px !important;
+  padding: 10px;
+  margin-left: 22px;
+}
+.error7 {
+  color: red;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 16px !important;
+  padding: 10px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* nav-bar userPage */
+.user-home {
+  background-image: url("../imgs/welcome.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-home .text-welcome {
+  transform: translateY(-140px);
+  text-align: center;
+}
+.user-home .text-welcome h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f67e49;
+}
+.user-home .text-welcome h3 {
+  font-size: 18px;
+}
+.btn {
+  background-color: transparent;
+  border: 2px solid #0a5eb0;
+  color: black;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #017eff;
+  color: white;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  transform: translateX(-70%);
+}
+.dropdown-item:hover {
+  background-color: #017eff;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #017eff;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #017eff;
+  font-style: italic;
+}
+
+@media (max-width: 575.98px) {
+  .navItem .navbar-brand {
+    font-size: 25px;
+  }
+}

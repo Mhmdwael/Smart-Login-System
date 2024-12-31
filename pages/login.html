@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imgs/rb_2387.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>LoginPage</title>
+  </head>
+  <body>
+    <nav class="navbar shadow navbar-expand-lg navItem">
+      <div class="container">
+        <a class="navbar-brand" href="#">Smart System</a>
+      </div>
+    </nav>
+    <div class="logPage py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="signUp-img">
+              <img src="../imgs/login.png" class="w-100" alt="sign up Image" />
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center flex-column"
+          >
+            <div
+              class="log-form border px-4 py-3 rounded-3 shadow w-100 m-auto"
+            >
+              <h1>Login</h1>
+              <div
+                class="logEmail d-flex justify-content-center align-items-center mt-3"
+              >
+                <i class="me-2 fa-solid fa-envelope"></i>
+                <input
+                  id="emailUser"
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+              <div class="case-error d-none text-danger"></div>
+              <p class="error5 d-none">This email is not found</p>
+              <p class="d-none error2">
+                Please enter a valid email address. It should contain an '@'
+                symbol followed by a domain name (e.g., example@example.com).
+              </p>
+              <div
+                class="logPassword d-flex justify-content-center align-items-center mt-3"
+              >
+                <i class="me-2 fa-solid fa-lock"></i>
+                <input
+                  id="passUser"
+                  type="password"
+                  class="form-control mb-3"
+                  placeholder="Enter Your Password"
+                />
+              </div>
+              <p class="error6 d-none">Incorrect password</p>
+              <p class="d-none error3">
+                "Password must be between 8 to 16 characters long, and contain
+                at least one uppercase letter, one lowercase letter, one number,
+                and one special character (e.g., @, $, !, %, )."
+              </p>
+              <p class="error7 text-center d-none">All Input is Required</p>
+              <a
+                id="logBtn"
+                class="btn text-center w-100 m-auto btn btn-form mb-3"
+                >LogIn</a
+              >
+              <p class="lead text-center">
+                Don't have an account?<a id="goSign">Sign Up</a>
+              </p>
+
+              <div
+                class="log-icon d-flex justify-content-center align-items-center mt-3"
+              >
+                <ul class="d-flex p-0 list-unstyled">
+                  <li>
+                    <a href="#" class="i-f"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="i-g"
+                      ><i class="fa-brands fa-google"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="i-x"><i class="fa-brands fa-x"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
